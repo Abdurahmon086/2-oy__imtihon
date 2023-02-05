@@ -107,7 +107,7 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 592px) {
 
     .guide {
 
@@ -122,6 +122,29 @@
 
                 &__text {
                     font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .guide {
+
+        &__inner {
+
+            .inner {
+
+                &__title {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+
+                &__text {
+                    font-size: 14px;
                     line-height: 22px;
                 }
             }

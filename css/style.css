@@ -775,13 +775,23 @@ main {
     width: 100%;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 592px) {
   .guide__inner .inner__title {
     font-size: 28px;
     line-height: 36px;
   }
   .guide__inner .inner__text {
     font-size: 15px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .guide__inner .inner__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .guide__inner .inner__text {
+    font-size: 14px;
     line-height: 22px;
   }
 }
