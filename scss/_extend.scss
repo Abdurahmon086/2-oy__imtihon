@@ -1,0 +1,59 @@
+%dark-btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-b-g;
+    padding: 18px 25px 16px 25px;
+    background: $color-white;
+    border-radius: 8px;
+    border: none;
+};
+
+%dark-btn:hover {
+    color: $color-white;
+    background: $color-l-p;
+    cursor: pointer;
+    transition: 0.3s all linear;
+};
+
+%light-btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 18px 25px 16px 25px;
+    background: $color-peach;
+    border-radius: 8px;
+    border: none;
+};
+
+%light-btn:hover {
+    background: $color-l-p;
+    cursor: pointer;
+    transition: 0.3s all linear;
+};
+
+%big-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-white;
+};
+
+%link-text {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+};
+
+%sides-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+    color: $color-b-g;
+};

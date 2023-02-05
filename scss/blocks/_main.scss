@@ -1,0 +1,17 @@
+main {
+    background-image: url(../../images/main-sh-t.png), url(../../images/main-sh.png);
+    background-repeat: no-repeat;
+    background-position-y: 400px, 1724px;
+    background-position-x: left, right;
+}
+
+.contact {
+   background-image: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    main {
+        background-image: none;
+    }
+}

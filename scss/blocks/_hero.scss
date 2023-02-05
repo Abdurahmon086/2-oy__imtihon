@@ -1,0 +1,211 @@
+.hero {
+    margin-top: 120px;
+
+    &__wrapper {
+        padding: 54px 95px;
+        background: #E7816B;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url(../../images/hero-bg.png);
+        background-repeat: no-repeat;
+        background-position-y: -160px;
+
+    }
+
+    &__title {
+        @extend %big-title;
+    }
+
+    &__text {
+        margin-top: 32px;
+        max-width: 450px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: end;
+        text-align: end;
+        row-gap: 15px;
+        max-width: 380px;
+
+        .form {
+            &__input {
+                width: 100%;
+                background: none;
+                padding: 11px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+
+
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+
+                &:hover::placeholder {
+                    color: #Fff;
+                    opacity: 1;
+                }
+
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+
+            &__textarea {
+                width: 100%;
+                background: none;
+                padding: 11px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+
+                &:hover::placeholder {
+                    color: #Fff;
+                    opacity: 1;
+                }
+
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+
+            &__btn {
+                @extend %dark-btn;
+                padding: 17px 48px;
+                margin-left: auto;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        margin-top: 110px;
+
+        &__wrapper {
+            padding: 71px 58px;
+            flex-direction: column;
+            align-items: stretch;
+            background-position-y: -80px;
+            background-position-x: -120px;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__form {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .hero-out {
+        background: $color-peach;
+        background-image: url(../../images/bg-sh.png);
+        background-size: 292px;
+        background-repeat: repeat-x;
+        background-position-x: -100px;
+
+        .hero {
+            margin-top:  80px;
+
+            &__wrapper {
+                background: none;
+                border-radius: 0;
+                padding: 72px 0;
+            }
+
+            &__title {
+                font-size: 32px;
+                line-height: 36px;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+            }
+
+            &__form {
+                margin-top: 35px;
+
+                .form {
+                    &__btn {
+                        margin-left: 0;
+                        margin: auto;
+                    }
+                }
+
+            }   
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    .hero-out {
+        background: $color-peach;
+        background-image: url(../../images/bg-sh.png);
+        background-size: 292px;
+        background-repeat: repeat-x;
+        background-position-x: -100px;
+
+        .hero {
+            margin-top:  80px;
+
+            &__wrapper {
+                background: none;
+                border-radius: 0;
+                padding: 72px 0;
+            }
+
+            &__title {
+                font-size: 32px;
+                line-height: 36px;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+            }
+
+            &__form {
+                margin-top: 35px;
+
+                .form {
+                    &__btn {
+                        margin-left: 0;
+                        margin: auto;
+                    }
+                }
+
+            }   
+        }
+    }
+}

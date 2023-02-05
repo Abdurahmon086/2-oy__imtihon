@@ -1,0 +1,106 @@
+.call {
+    margin-top: 80px;
+    background: $color-peach;
+    border-radius: 15px;
+    padding: 72px 95px;
+    background-image: url(../../images/call-bg.png), url(../../images/call-bg.png), url(../../images/call-bg.png), url(../../images/call-bg.png), url(../../images/call-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: -146px, -146px, 146px, 146px, 146px;
+    background-position-x: 527px, right, 244px, 527px, right ;
+    background-size: 292px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(0, 72px);
+
+
+    &__title {
+        font-weight: 500;
+        font-size: 39px;
+        line-height: 40px;
+        max-width: 268px;
+    }
+
+    &__text {
+        margin-top: 10px;
+        max-width: 455px;
+    }
+
+    &__btn {
+        @extend %dark-btn;
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    .call {
+        margin-top: 0;
+        padding: 57px 58px;
+        background-position-y: -146px, -146px, 146px, 146px, 146px;
+        background-position-x: 272px, 564px, -20px, 272px, 564px ;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 32px;
+        transform: translate(0, 83px);
+
+
+        &__title {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .call {
+        margin-top: 0;
+        padding: 57px 58px;
+        background-position-y: -146px, -146px, 146px, 146px, 146px;
+        background-position-x: 272px, 564px, -20px, 272px, 564px ;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 32px;
+        transform: translate(0, 83px);
+
+
+        &__title {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .call {
+        margin-top: 0;
+        padding: 64px 24px;
+        transform: translate(0, 185px);
+        
+        background-position-y: -146px, -146px, 146px, 146px, 146px;
+        background-position-x: 52px, 564px, -240px, 52px, 520px ;
+
+
+        &__title {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+    }
+
+}
